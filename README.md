@@ -43,13 +43,13 @@ If you want to make changes or review the design, Schematic files (in .pdf) and 
 
 
 ### Device operation for laymans:
-Microcontroller, trough Digital-to-Analog converter (DAC) sets the voltage on positive input of the Op amp. Then output of the Op amp drives the N-MOSFET that allows current to flow. Negative input of Op amp is connected to the sensing resistor (Rs) that is between source of the N-MOSFET and GND. Voltage over Rs (and thus voltage on negative input of Op Amp) is proportional to the current flowing trough the resistor. For 1 Ohm resistor, V=1 ohm x Current draw. Since Op Amp * "tries to equalise positive and negative inputs" *, if the voltage on positive input is 1V, to equalise positive and negative inputs, voltage on negative input (that is connected to Rs) must also be 1V, therefore Op Amp drives N-MOSFET to open and allow the current flow but only enough to make 1V on negative side. Calculating the current draw from the above mentioned formula, we see that the current draw will be 1A.
+Microcontroller, trough Digital-to-Analog converter (DAC) sets the voltage on positive input of the Op amp. Then output of the Op amp drives the N-MOSFET that allows current to flow. Negative input of Op amp is connected to the sensing resistor (Rs) that is between source of the N-MOSFET and GND. Voltage over Rs (and thus voltage on negative input of Op Amp) is proportional to the current flowing trough the resistor. For 1 Ohm resistor, V=1 ohm x Current draw. Since Op Amp * "tries to equalize positive and negative inputs" *, if the voltage on positive input is 1V, to equalize positive and negative inputs, voltage on negative input (that is connected to Rs) must also be 1V, therefore Op Amp drives N-MOSFET to open and allow the current flow but only enough to make 1V on negative side. Calculating the current draw from the above mentioned formula, we see that the current draw will be 1A.
 
 ### Development
 
 Want to contribute? Great!
 
-Currently there is a C# .NET application written for interfacing with the device. It works but it's very rough and very basic. If you are interested in writting an application in Python, C++, C or any other language, please do. I would greatly appreciate that. ALso if you need help or more information feel free to contact me over Skype, Email, IRC or whatever way you like. :)
+Currently there is a C# .NET application written for interfacing with the device. It works but it's very rough and very basic. If you are interested in writing an application in Python, C++, C or any other language, please do. I would greatly appreciate that. ALso if you need help or more information feel free to contact me over Skype, Email, IRC or whatever way you like. :)
 
 Also if you think you can help in any other way, please do. Any kind of help is greatly appreciated.
 
