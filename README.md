@@ -13,6 +13,11 @@ Idea was to create low-cost precise device for simultaneous measurement of Volta
 - Recording Voltage vs Amps data and graphing the results
 - Easy to use
 
+### Example graph outputs from Application
+![](https://raw.githubusercontent.com/coldkeyboard/USB-PAL-Tester/master/Desktop%20Application/C%23%20App%20Sample%20Plot%201%20-%205V%201A%20Power%20Adapter.png)
+![](https://raw.githubusercontent.com/coldkeyboard/USB-PAL-Tester/master/Desktop%20Application/C%23%20App%20Sample%20Plot%202%20-%205V%201A%20Power%20Adapter.png)
+
+
 ### Basic capabilities:
 - PSU under test max voltage 55V
 - Current Load of 5A (or more by changing Rs value)
