@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.6.1] - 2015-03-01
+### Added
+- Added examples of Line, SpLine and Point charts to /Desktop Application/ folder.
+
+### Changed
+- Desktop Application now has options to clear graph, change graph type and save graph (was available from the beginning but was hidden under chart double-click and by default saved at c:\).
+- Desktop Application should now display proper values for X-axis
+
 ## [0.6] - 2015-03-01
 ### Added
 - C# Source files and compiled application written in C# to interface with the device

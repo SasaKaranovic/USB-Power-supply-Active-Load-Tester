@@ -19,26 +19,13 @@ namespace Power_supply_Active_Load_Tester
 {
     public partial class Form2 : Form
     {
-       
 
-        public Form2()
+
+        private void ChartRedraw(SeriesChartType ChartType = SeriesChartType.Spline, ChartColorPalette Pallete = ChartColorPalette.EarthTones)
         {
-            InitializeComponent();
-        }
-
-
-        void Form2_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
-        {
-            
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
+            chart1.Series.Clear();
 
             Series Measured = new Series("measured");
-
-            
-
 
             for (int i = 0; i < Variables.BufferVoltage.Count; i++)
             {
@@ -49,14 +36,13 @@ namespace Power_supply_Active_Load_Tester
                 Debug.WriteLine("Voltage: " + xval + "\tCurrent: " + yval);
             }
 
-            
 
             //Chart Appereance
-            Measured.ChartType = SeriesChartType.Spline;
-            Measured.Palette = ChartColorPalette.EarthTones;
+            Measured.ChartType = ChartType;
+            Measured.Palette = Pallete;
             Measured.IsValueShownAsLabel = true;
 
-           
+
 
             chart1.Series.Add(Measured);
 
@@ -65,29 +51,77 @@ namespace Power_supply_Active_Load_Tester
 
             chart1.ChartAreas[0].AxisY.Title = "Voltage [V]";
             chart1.ChartAreas[0].AxisX.Title = "Current [A]";
-
-
+            chart1.ChartAreas[0].AxisX.LabelStyle.Format = "{0:0.000}";
         }
 
-        private void chart1_Click(object sender, EventArgs e)
+        public Form2()
         {
-
+            InitializeComponent();
         }
 
-        private void chart1_DoubleClick(object sender, System.EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            ChartRedraw();
+        }
+
+        private void lineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChartRedraw(SeriesChartType.Line);
+        }
+
+        private void splineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChartRedraw(SeriesChartType.Spline);
+        }
+
+        private void pointsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChartRedraw(SeriesChartType.Point);
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DateTime time = DateTime.Now;
             string filename = time.ToString("yyyy-MM-dd-HH-mm") + "-chart.png";
 
-            try
-            {
-                this.chart1.SaveImage("C:\\" + filename, ChartImageFormat.Png);
+            // Displays a SaveFileDialog so the user can save the Image
+           // assigned to Button2.
+           SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+           saveFileDialog1.Filter = "PNG Image|*.png";
+           saveFileDialog1.Title = "Save an Image File";
+           saveFileDialog1.FileName = filename;
+           saveFileDialog1.ShowDialog();
+
+           // If the file name is not an empty string open it for saving.
+           if(saveFileDialog1.FileName != "")
+           {
+
+               try
+               {
+                   this.chart1.SaveImage(saveFileDialog1.FileName, ChartImageFormat.Png);
+               }
+               catch (Exception ex)
+               {
+                   Console.WriteLine(ex.Message);
+               }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            
+
+
+
         }
+
+        private void clearChartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var confirmed = MessageBox.Show("Delete all of the previously logged data?", "Confirm Clear Graph", MessageBoxButtons.YesNoCancel);
+
+            if (confirmed == DialogResult.Yes)
+            {
+                Variables.BufferOpAmp.Clear();
+                Variables.BufferCurrent.Clear();
+                Variables.BufferVoltage.Clear();
+                MessageBox.Show("Graph cleared!");
+            }
+        }
+
     }
 }

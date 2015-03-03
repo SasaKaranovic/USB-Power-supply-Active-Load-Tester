@@ -253,7 +253,7 @@ namespace Power_supply_Active_Load_Tester
         {
             AddToLog = false;
             serialport.Write("S:0000");
-
+            txtCurrent.Text = "0";
 
         }
 
@@ -279,11 +279,17 @@ namespace Power_supply_Active_Load_Tester
 
         private void btnClearGraph_Click(object sender, EventArgs e)
         {
-            Variables.BufferOpAmp.Clear();
-            Variables.BufferCurrent.Clear();
-            Variables.BufferVoltage.Clear();
-        }
+            var confirmed = MessageBox.Show("Delete all of the previously logged data?", "Confirm Clear Graph", MessageBoxButtons.YesNoCancel);
 
+            if (confirmed == DialogResult.Yes) 
+            {
+                Variables.BufferOpAmp.Clear();
+                Variables.BufferCurrent.Clear();
+                Variables.BufferVoltage.Clear();
+                MessageBox.Show("Graph cleared!");
+            }
+            
+        }
 
         
     }

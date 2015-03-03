@@ -47,14 +47,13 @@
             this.btn50mA = new System.Windows.Forms.Button();
             this.btn100mA = new System.Windows.Forms.Button();
             this.btn500mA = new System.Windows.Forms.Button();
-            this.btnClearGraph = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRead
             // 
-            this.btnRead.Location = new System.Drawing.Point(12, 265);
+            this.btnRead.Location = new System.Drawing.Point(230, 105);
             this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(128, 23);
+            this.btnRead.Size = new System.Drawing.Size(96, 23);
             this.btnRead.TabIndex = 0;
             this.btnRead.Text = "Read Values";
             this.btnRead.UseVisualStyleBackColor = true;
@@ -112,7 +111,7 @@
             // 
             this.lblCurrent.AutoSize = true;
             this.lblCurrent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrent.Location = new System.Drawing.Point(15, 76);
+            this.lblCurrent.Location = new System.Drawing.Point(14, 79);
             this.lblCurrent.Name = "lblCurrent";
             this.lblCurrent.Size = new System.Drawing.Size(79, 20);
             this.lblCurrent.TabIndex = 9;
@@ -135,7 +134,7 @@
             // 
             // btnGraph
             // 
-            this.btnGraph.Location = new System.Drawing.Point(12, 213);
+            this.btnGraph.Location = new System.Drawing.Point(12, 229);
             this.btnGraph.Name = "btnGraph";
             this.btnGraph.Size = new System.Drawing.Size(318, 23);
             this.btnGraph.TabIndex = 11;
@@ -145,7 +144,7 @@
             // 
             // btnCurrentOff
             // 
-            this.btnCurrentOff.Location = new System.Drawing.Point(230, 105);
+            this.btnCurrentOff.Location = new System.Drawing.Point(230, 134);
             this.btnCurrentOff.Name = "btnCurrentOff";
             this.btnCurrentOff.Size = new System.Drawing.Size(96, 23);
             this.btnCurrentOff.TabIndex = 12;
@@ -212,22 +211,11 @@
             this.btn500mA.UseVisualStyleBackColor = true;
             this.btn500mA.Click += new System.EventHandler(this.btn500mA_Click);
             // 
-            // btnClearGraph
-            // 
-            this.btnClearGraph.Location = new System.Drawing.Point(202, 265);
-            this.btnClearGraph.Name = "btnClearGraph";
-            this.btnClearGraph.Size = new System.Drawing.Size(128, 23);
-            this.btnClearGraph.TabIndex = 21;
-            this.btnClearGraph.Text = "Clear Graph";
-            this.btnClearGraph.UseVisualStyleBackColor = true;
-            this.btnClearGraph.Click += new System.EventHandler(this.btnClearGraph_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 300);
-            this.Controls.Add(this.btnClearGraph);
+            this.ClientSize = new System.Drawing.Size(338, 264);
             this.Controls.Add(this.btn500mA);
             this.Controls.Add(this.btn100mA);
             this.Controls.Add(this.btn50mA);
@@ -247,7 +235,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Power Supply Active Load v0.6";
+            this.Text = "Power Supply Active Load v0.6.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -273,7 +261,6 @@
         private System.Windows.Forms.Button btn50mA;
         private System.Windows.Forms.Button btn100mA;
         private System.Windows.Forms.Button btn500mA;
-        private System.Windows.Forms.Button btnClearGraph;
     }
 }
 
