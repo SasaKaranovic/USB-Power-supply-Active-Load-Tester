@@ -1,7 +1,7 @@
 # USB Power supply Active Load Tester
 
 USB Power supply Active Load Tester or short PAL Tester is unit designed for testing the quality of the power supplies.
-Idea was to create low-cost precise device for simultaneous measurement of Voltage and Current draw from the device under test. This is one of my weekend projects that I have decided to release to the public. If you are interested in my other projects you can see them on [my homepage].
+Idea was to create low-cost precise device for simultaneous measurement of Voltage and Current draw from the device under test. This is one of my weekend projects that I have decided to release to the public. If you are interested in my other projects you can check them out on [my homepage].
 
 ### Device Features:
 - Open Source and Open Hardware
@@ -20,7 +20,7 @@ Idea was to create low-cost precise device for simultaneous measurement of Volta
 
 ### Basic capabilities:
 - PSU under test max voltage 55V
-- Current Load of 5A (or more by changing Rs value)
+- Current Load of 5A (or more by lowering current sense resistor value)
 - Current and Voltage accuracy below 5%
 
 
@@ -30,8 +30,10 @@ Idea was to create low-cost precise device for simultaneous measurement of Volta
 - 1x - MCP4726 12bit DAC [0.96$]
 - 1x - IRF L3705 Logic Level N-MOSFET [0.5$]
 - 1x - CH340T USB-to-Serial converter [0.99$]
-- 10x - 1 ohm 1% 1/2W resistor
+- 10x - Current sense 1 ohm 1% 1/2W resistor
 - miscellaneous (resistors and capacitors)
+
+Total components cost should be way under 10$.
 
 
 ### How to build your own PAL Tester:
@@ -49,7 +51,7 @@ Microcontroller, trough Digital-to-Analog converter (DAC) sets the voltage on po
 
 Want to contribute? Great!
 
-Currently there is a C# .NET application written for interfacing with the device. It works but it's very rough and very basic. If you are interested in writing an application in Python, C++, C or any other language, please do. I would greatly appreciate that. ALso if you need help or more information feel free to contact me over Skype, Email, IRC or whatever way you like. :)
+Currently there is a C# .NET application written for interfacing with the device. It works but it's very rough and very basic. If you are interested in writing an application in Python, C++, C or any other language, please do. I would greatly appreciate that. Also if you need help or more information, feel free to contact me over Skype, Email, IRC or whatever way you like. :)
 
 Also if you think you can help in any other way, please do. Any kind of help is greatly appreciated.
 
@@ -59,7 +61,7 @@ Special thanks to
 
 Contact me
 ----
-[Sasa Karanovic Home] - Follow me [@Twitter] - [Facebook] - [Skype] - [EMail] *remove ".xyz" :)
+[Sasa Karanovic Home] - Follow me [@Twitter] - [Facebook] - [Skype] - [EMail] *remove ".nospam" :)
 
 
 License and Disclaimer
@@ -73,4 +75,4 @@ You are using this software and hardware at your own risk.
 [@Twitter]:http://twitter.com/iSaleK
 [Facebook]:https://www.facebook.com/SasaKaranovic
 [Skype]:skype:coldkeyboard
-[EMail]:mailto:sale@mrdnise.xyz.com
+[EMail]:mailto:sale@mrdnise.nospam.com
