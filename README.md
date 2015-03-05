@@ -75,7 +75,7 @@ Special thanks to
 
 Contact me
 ----
-[Sasa Karanovic Home] - Follow me [@Twitter] - [Facebook] - [Skype] - [EMail]
+[Sasa Karanovic Home] - Follow me [@Twitter] - [Facebook] - Skype:ColdKeyboard - [EMail]
 
 
 License and Disclaimer
@@ -88,5 +88,4 @@ You are using this software and hardware at your own risk.
 [my homepage]:http://sasakaranovic.com
 [@Twitter]:http://twitter.com/iSaleK
 [Facebook]:https://www.facebook.com/SasaKaranovic
-[Skype]:skype:coldkeyboard
 [EMail]:mailto:sale@mrdnise.com
