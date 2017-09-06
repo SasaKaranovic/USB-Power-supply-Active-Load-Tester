@@ -11,13 +11,13 @@ other projects you can see them on [my homepage].
 - Open Source and Open Hardware
 - Modular design, easy to understand and change/adapt to your needs
 - Uses widely available and off-the shelf components
-- Components Bill of Material is below $10
+- Bill of Material is below $10
 - Integrated USB-to-Serial converter for easier interface with the device
 - API for communicating with PC
 - Recording Voltage vs Amps data and graphing the results
 - Easy to use
 
-### Example plot of Voltage vs Current for 5V 1A adapter (100mA increments)
+### Example plot of Voltage vs Current for 5V 1A adapter
 ![](https://raw.githubusercontent.com/coldkeyboard/USB-PAL-Tester/master/Desktop%20Application/C%23%20App%20Sample%20Plot%201%20-%205V%201A%20Power%20Adapter.png)
 ![](https://raw.githubusercontent.com/coldkeyboard/USB-PAL-Tester/master/Desktop%20Application/C%23%20App%20Sample%20Plot%202%20-%205V%201A%20Power%20Adapter.png)
 
