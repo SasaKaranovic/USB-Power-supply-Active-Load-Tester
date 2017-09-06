@@ -17,7 +17,7 @@ other projects you can see them on [my homepage].
 - Recording Voltage vs Amps data and graphing the results
 - Easy to use
 
-### Example plot of Voltage vs Current for 5V 1A adapter
+### Example plot of Voltage vs Current for 5V 1A adapter (100mA increments)
 ![](https://raw.githubusercontent.com/coldkeyboard/USB-PAL-Tester/master/Desktop%20Application/C%23%20App%20Sample%20Plot%201%20-%205V%201A%20Power%20Adapter.png)
 ![](https://raw.githubusercontent.com/coldkeyboard/USB-PAL-Tester/master/Desktop%20Application/C%23%20App%20Sample%20Plot%202%20-%205V%201A%20Power%20Adapter.png)
 
@@ -75,7 +75,7 @@ Special thanks to
 
 Contact me
 ----
-[Sasa Karanovic Home] - Follow me [@Twitter] - [Facebook] - Skype:ColdKeyboard - [EMail]
+[Sasa Karanovic Home] - Follow me [@Twitter] - [Facebook] - [YouTube] - [EMail]
 
 
 License and Disclaimer
@@ -86,6 +86,7 @@ You are using this software and hardware at your own risk.
 
 [Sasa Karanovic Home]:http://sasakaranovic.com
 [my homepage]:http://sasakaranovic.com
+[YouTube]:http://sasakaranovic.com/youtube
 [@Twitter]:http://twitter.com/iSaleK
 [Facebook]:https://www.facebook.com/SasaKaranovic
 [EMail]:mailto:sale@mrdnise.com
